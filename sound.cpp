@@ -31,7 +31,7 @@ Sound::Sound(QWidget *parent) :
     tel = NULL;
     mic = NULL;
 
-
+    ui->logTextEdit->append("brach");
     audioOutputs = QAudioDeviceInfo::availableDevices(QAudio::AudioOutput);
     foreach (const QAudioDeviceInfo &deviceInfo, audioOutputs){
         ui->logTextEdit->append( "Output device name: " + deviceInfo.deviceName());
